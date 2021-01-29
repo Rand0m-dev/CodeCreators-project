@@ -17,13 +17,17 @@
 
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
-      to bottom,
-      $white 12%,
-      $card-bcg 12%,
-      $card-bcg
-    );
+        to bottom,
+        $white 12%,
+        $card-bcg 12%,
+        $card-bcg
+      ),
+      url(../images/contacts-card/card-bcg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
+
 .container {
   box-sizing: border-box;
   z-index: 5;
