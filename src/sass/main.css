@@ -33,6 +33,13 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts-card {
+    background-image: url(../image/contacts-card/card-bcg-img.png), -webkit-gradient(linear, left top, left bottom, color-stop(12%, #ffffff), color-stop(12%, #fff5f6), to(#fff5f6));
+    background-image: url(../image/contacts-card/card-bcg-img.png), linear-gradient(to bottom, #ffffff 12%, #fff5f6 12%, #fff5f6);
+  }
+}
+
 .container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
