@@ -83,9 +83,9 @@
 
 @media screen and (min-width: 768px) {
   .contacts-card-list {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
