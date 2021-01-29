@@ -16,8 +16,12 @@
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url(../image/contacts-card/card-bcg-img.png),
-      linear-gradient(to bottom, $white 12%, $card-bcg 12%, $card-bcg);
+    background-image: linear-gradient(
+      to bottom,
+      $white 12%,
+      $card-bcg 12%,
+      $card-bcg
+    );
   }
 }
 .container {
