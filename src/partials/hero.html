@@ -1,6 +1,29 @@
 <section class="hero">
   <div class="cicle"></div>
-  <img class="icecream" src="./images/icecream-mobile@1x.png" alt="" />
+  <picture class="icecream">
+    <source
+      srcset="
+        ./images/hero/icecream/icecream-mobile@1x.png 1x,
+        ./images/hero/icecream/icecream-mobile@2x.png 2x
+      "
+      media="(max-width: 767px)"
+    />
+    <source
+      srcset="
+        ./images/hero/icecream/icecream-tablet@1x.png 1x,
+        ./images/hero/icecream/icecream-tablet@1x.png 2x
+      "
+      media="(min-width: 768px) and (max-width: 1199px)"
+    />
+    <source
+      srcset="
+        ./images/hero/icecream/icecream-desktop@1x.png 1x,
+        ./images/hero/icecream/icecream-desktop@1x.png 2x
+      "
+      media="(min-width: 1200px)"
+    />
+    <img src="./images/hero/icecream/icecream-mobile@1x.png" alt="ice-cream" />
+  </picture>
   <header class="header">
     <div class="container">
       <nav class="header-navigation">
