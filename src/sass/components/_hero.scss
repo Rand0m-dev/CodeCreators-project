@@ -1,38 +1,38 @@
 .hero {
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
   background-color: getColor(background-main);
 }
 
 .hero-section {
+  position: relative;
+  z-index: 4;
   background-repeat: no-repeat;
 
   @media screen and (max-width: 767px) {
-    padding-top: 92px;
-    padding-bottom: 118px;
-
-    background-image: url('./../images/hero/icecream/icecream-tablet@1x.png'),
-      url('./../images/hero/eclipse.svg');
-    background-size: 171px 410px, 346px 344px;
-    background-position: left calc(50% + 40px) bottom,
-      left calc(50% + 46px) top 0px;
+    padding-top: 110px;
+    padding-bottom: 160px;
   }
+}
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    background-image: url('./../images/hero/girl/girl-tablet@1x.png'),
-      url('./../images/hero/icecream/icecream-tablet@1x.png'),
-      url('./../images/hero/eclipse.svg');
-    background-size: 168px 133px, 143px 336px, 324px 322px;
-    background-position: left calc(50% + 265px) bottom,
-      left calc(50% + 65px) bottom, left calc(50% + 85px) top 35px;
-  }
+.icecream {
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+}
 
-  @media screen and (min-width: 1200px) {
-    background-image: url('./../images/hero/girl/girl-desktop@1x.png'),
-      url('./../images/hero/icecream/icecream-desktop@1x.png'),
-      url('./../images/hero/eclipse.svg');
-    background-size: 293px 232px, 236px 557px, 538px 538px;
-    background-position: left calc(50% + 420px) bottom,
-      left calc(50% + 100px) bottom, left calc(50% + 130px) top 50px;
-  }
+.cicle {
+  z-index: 2;
+  position: absolute;
+  width: 346px;
+  height: 344px;
+
+  border-radius: 50%;
+  background-color: rgba(255, 165, 186, 1);
+  left: 36px;
+  top: 83px;
 }
 
 .header {
@@ -170,6 +170,7 @@
 
   .text {
     font-size: 42px;
+    line-height: 0.96;
     color: getColor(title);
 
     @media screen and (min-width: 260px) {
@@ -188,11 +189,13 @@
 
 .hero-buttons {
   padding: 0;
+  margin: 0;
   display: flex;
 }
 
 .hero-button {
   display: block;
+  padding: 0;
   height: 24px;
   font-size: 8px;
   line-height: 1.25;
