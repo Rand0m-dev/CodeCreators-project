@@ -47,6 +47,20 @@
   }
 }
 
+.girl {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    z-index: 6;
+    position: absolute;
+    display: inline;
+    width: 168px;
+    height: 133px;
+    left: 566px;
+    top: 266px;
+  }
+}
+
 .header {
   width: 100%;
 }

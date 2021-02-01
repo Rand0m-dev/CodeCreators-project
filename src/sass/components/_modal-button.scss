@@ -17,6 +17,10 @@
     opacity: 0;
     pointer-events: none;
   }
+
+  @media screen and (min-width: 768px) {
+    height: 1020px;
+  }
 }
 
 .is-hidden .menu-container {
