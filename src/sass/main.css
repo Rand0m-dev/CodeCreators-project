@@ -1924,10 +1924,10 @@ li.modal-menu-item:hover {
 @media screen and (min-width: 1200px) {
   .bcg-img-sale {
     position: absolute;
-    top: 50px;
+    top: 100px;
     left: 0;
     right: 0;
-    max-width: 1600px;
+    width: 100%;
     pointer-events: none;
   }
 }
