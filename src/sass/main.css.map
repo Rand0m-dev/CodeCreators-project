@@ -8,6 +8,7 @@
         "basic/_fonts.scss",
         "basic/_container.scss",
         "components/_hero.scss",
+        "components/_modal-button.scss",
         "components/_products.scss",
         "components/_how-made.scss",
         "components/_gallery.scss",
